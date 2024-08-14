@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        form {
+    
+            text-align: center;
+    
+             }
+            
+            #name{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            #email{
+                width: 15%;
+                padding: 6px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            #password{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            .image{
+                background-image: url("image.png");
+            }
+            .next{
+                text-align: center;
+            }
+    </style>
+</head>
+<body class="image">
+    <form action="response.html" method="GET">
+        <h1>LOGIN FORM</h1>
+        <div class="user">
+            <label for="name">USERNAME:</label>
+            <input name="username" type="text" id="name" placeholder="Enter Your Name" required>
+        </div>
+    
+        <div class="mail">
+            <label for="email">EMAIL ID:</label>
+            <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
+        </div>
+     
+        <div class="pin">
+            <label for="password">PASSWORD:</label>
+            <input name="password" type="password" id="password" placeholder="Enter Your Password" required>
+        </div>
+       
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+       <input type="checkbox"  name="remember"> Remember me
+        </label>
+        <p class="psw">Forgot <a href="#">password?</a></p>    
+    </form>
+       
+
+         <p class="next"> <a href="billing.html">NEXT FORM >></a></p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product form</title>
+    <style>
+        form {
+            text-align: center;
+    
+             }
+            #name,#email,#dte,#quantity{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            .next{
+                text-align: center;
+            }
+            .image{
+                background-image: url("cookie.png");
+            }
+    </style>
+</head>
+<body class="image">
+    <form action="response.html" method="GET">
+        <h1>PRODUCT PURCHASE FORM</h1>
+        <div class="name">
+            <label for="name">PRODUCT NAME:</label>
+            <input name="name" type="text" id="name" placeholder="Enter Product Name" required>
+        </div>
+    
+        <div class="mail">
+            <label for="email">EMAIL ID:</label>
+            <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
+        </div>
+     
+        <div class="qty">
+            <label for="quantity">QUANTITY:</label>
+            <input name="quantity" type="number" id="quantity" placeholder="No. of Quantity" step="2">
+        </div>
+
+        <div class="dte">
+            <label for="date">DELIVERY DATE:</label>
+            <input name="date" type="date" id="dte" min="2024-08-15" max="2024-09-04" required>
+        </div>
+
+        <button type="submit">Print</button>
+        <button type="reset">Reset</button>
+       
+    </form>
+    <p class="next"> <a href="index.html"> << NEXT FORM</a></p>
+
+</body>
+</html>

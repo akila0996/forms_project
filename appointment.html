@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduling Form</title>
+    <style>
+        form {
+            text-align: center;
+    
+             }
+            
+            #fstname,#lstname{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            #email,#contact{
+                width: 15%;
+                padding: 6px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            .image{
+                background-image: url("schld.jpg");
+            }
+            .next{
+                text-align: center;
+            }
+            #dte{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            
+    </style>
+</head>
+<body class="image">
+    <form action="response.html" method="GET">
+        <h1>APPOINTMENT  SCHEDULING  FORM</h1>
+        <div class="user">
+            <label for="fstname">FIRST NAME:</label>
+            <input name="fstname" type="text" id="fstname" placeholder="Enter First Name" required>
+        </div>
+
+        <div class="user">
+            <label for="lstname">LAST NAME:</label>
+            <input name="lstname" type="text" id="lstname" placeholder="Enter Last Name" required>
+        </div>
+
+        <div>
+            <label>GENDER:</label>
+        
+            <input type="radio" id="gender" name="gender" value="Male">
+            <label>Male</label>  
+                      <input type="radio" id="gender" name="gender" value="Female">
+                                  <label>Female</label>
+        </div>
+    
+        <div class="mail">
+            <label for="email">EMAIL ID:</label>
+            <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
+        </div>
+
+        <div class="dte">
+            <label for="date">DATE:</label>
+            <input name="date" type="date" id="dte" min="2024-08-15" required>
+
+        </div>
+
+        <div class="phone">
+            <label for="contact">CONTACT NUMBER:</label>
+            <input type="tel" name="contact" id="contact" placeholder="504-569-533" required>
+        </div>
+        <div>
+            <p><label for="message">PURPOSE OF VISIT:</label></p>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="summary..."></textarea>
+        </div>
+       
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+       
+    <p class="next"> <a href="product.html">NEXT FORM >></a></p>
+</body>
+</html>

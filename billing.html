@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Form</title>
+    <style>
+        form {
+            text-align: center;
+    
+             }
+            
+            #name{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            #email{
+                width: 15%;
+                padding: 6px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            #amount{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+            .image{
+                background-image: url("images.jpg");
+            }
+            .next{
+                text-align: center;
+            }
+            #dte{
+                width: 15%;
+                padding: 5px;
+                margin: 10px 10px;
+                border-radius: 25px;
+            }
+    </style>
+</head>
+    <body class="image">
+        <form action="response.html" method="GET">
+            <h1>BILL FORM</h1>
+            <div class="user">
+                <label for="name">CUSTOMER NAME:</label>
+                <input name="name" type="text" id="name" placeholder="Enter customer Name" required>
+            </div>
+        
+            <div class="mail">
+                <label for="email">EMAIL ID:</label>
+                <input type="email" name="email" id="email" placeholder="Example@gmail.com" required>
+            </div>
+         
+            <div class="amt">
+                <label for="amount">AMOUNT:</label>
+                <input name="amount" type="number" id="amount" placeholder="0.00 &#8377;" step="2" >
+            </div>
+
+            <div class="dte">
+                <label for="date">DATE:</label>
+                <input name="date" type="date" id="dte" min="2024-08-15" required>
+            </div>
+           
+            <button type="submit">Print</button>
+            <button type="reset">Reset</button>
+        </form>
+           
+    
+             <p class="next"> <a href="appointment.html"> NEXT FORM >></a></p>
+             
+             
+</body>
+</html>
